@@ -12,6 +12,9 @@
 		B1E4DD45228BE76800417F4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E4DD43228BE76800417F4E /* Main.storyboard */; };
 		B1E4DD47228BE76800417F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E4DD46228BE76800417F4E /* Assets.xcassets */; };
 		B1E4DD4A228BE76800417F4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E4DD48228BE76800417F4E /* LaunchScreen.storyboard */; };
+		B1E4DD52228BE7C000417F4E /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4DD51228BE7C000417F4E /* CoffeeMachine.swift */; };
+		B1E4DD54228C032D00417F4E /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4DD53228C032D00417F4E /* Machine.swift */; };
+		B1E4DD56228C053300417F4E /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4DD55228C053300417F4E /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		B1E4DD46228BE76800417F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1E4DD49228BE76800417F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1E4DD4B228BE76800417F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E4DD51228BE7C000417F4E /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
+		B1E4DD53228C032D00417F4E /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
+		B1E4DD55228C053300417F4E /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				B1E4DD3F228BE76800417F4E /* AppDelegate.swift */,
+				B1E4DD51228BE7C000417F4E /* CoffeeMachine.swift */,
 				B1E4DD41228BE76800417F4E /* ViewController.swift */,
+				B1E4DD53228C032D00417F4E /* Machine.swift */,
+				B1E4DD55228C053300417F4E /* RoundedButton.swift */,
 				B1E4DD43228BE76800417F4E /* Main.storyboard */,
 				B1E4DD46228BE76800417F4E /* Assets.xcassets */,
 				B1E4DD48228BE76800417F4E /* LaunchScreen.storyboard */,
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E4DD42228BE76800417F4E /* ViewController.swift in Sources */,
+				B1E4DD56228C053300417F4E /* RoundedButton.swift in Sources */,
+				B1E4DD54228C032D00417F4E /* Machine.swift in Sources */,
 				B1E4DD40228BE76800417F4E /* AppDelegate.swift in Sources */,
+				B1E4DD52228BE7C000417F4E /* CoffeeMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
