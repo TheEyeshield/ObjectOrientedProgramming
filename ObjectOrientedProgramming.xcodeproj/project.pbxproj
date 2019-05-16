@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10E1C67228D63DB00BB6CA0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E1C66228D63DB00BB6CA0 /* DetailViewController.swift */; };
 		B1E4DD40228BE76800417F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4DD3F228BE76800417F4E /* AppDelegate.swift */; };
 		B1E4DD42228BE76800417F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4DD41228BE76800417F4E /* ViewController.swift */; };
 		B1E4DD45228BE76800417F4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E4DD43228BE76800417F4E /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B10E1C66228D63DB00BB6CA0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B1E4DD3C228BE76800417F4E /* ObjectOrientedProgramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectOrientedProgramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E4DD3F228BE76800417F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E4DD41228BE76800417F4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,11 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				B1E4DD3F228BE76800417F4E /* AppDelegate.swift */,
+				B1E4DD53228C032D00417F4E /* Machine.swift */,
 				B1E4DD51228BE7C000417F4E /* CoffeeMachine.swift */,
 				B1E4DD41228BE76800417F4E /* ViewController.swift */,
-				B1E4DD53228C032D00417F4E /* Machine.swift */,
 				B1E4DD55228C053300417F4E /* RoundedButton.swift */,
 				B1E4DD43228BE76800417F4E /* Main.storyboard */,
+				B10E1C66228D63DB00BB6CA0 /* DetailViewController.swift */,
 				B1E4DD46228BE76800417F4E /* Assets.xcassets */,
 				B1E4DD48228BE76800417F4E /* LaunchScreen.storyboard */,
 				B1E4DD4B228BE76800417F4E /* Info.plist */,
@@ -147,6 +150,7 @@
 				B1E4DD42228BE76800417F4E /* ViewController.swift in Sources */,
 				B1E4DD56228C053300417F4E /* RoundedButton.swift in Sources */,
 				B1E4DD54228C032D00417F4E /* Machine.swift in Sources */,
+				B10E1C67228D63DB00BB6CA0 /* DetailViewController.swift in Sources */,
 				B1E4DD40228BE76800417F4E /* AppDelegate.swift in Sources */,
 				B1E4DD52228BE7C000417F4E /* CoffeeMachine.swift in Sources */,
 			);

@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
     @IBOutlet weak var coffeeLabel: UILabel!
     @IBOutlet weak var milkLabel: UILabel!
+    
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     var coffeeMachine: CoffeeMachine!
     
@@ -23,6 +26,7 @@ class ViewController: UIViewController {
         updateLabel()
         print(coffeeMachine.voltages)
         
+        passwordTextField.delegate = self
     }
 
     @IBAction func addCoffee(_ sender: Any) {
@@ -44,6 +48,34 @@ class ViewController: UIViewController {
       coffeeLabel.text = String(coffeeMachine.numOfBeans)
       milkLabel.text = String(coffeeMachine.numOfMilk)
     }
+
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "toDetail", sender: self)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail", let destination = segue.destination as? DetailViewController {
+            destination.nameFromPreviousView = firstNameTextField.text
+        }
+    }
+    
+}
+
+extension ViewController:UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == firstNameTextField {
+            if textField.text == "" {
+                let alert = UIAlertController(title: "Error", message: "Text field should not be empty", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            } else {
+            passwordTextField.becomeFirstResponder()
+            }
+        } else {
+            passwordTextField.resignFirstResponder()
+        }
+        
+        return true
+    }
 }
 
